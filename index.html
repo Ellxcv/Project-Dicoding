@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dicoding</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo"></div>
+      <ul class="menu">
+        <li class="active">
+          <a href="#">
+            <i class="bx bxs-dashboard"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-user"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-log-out"></i>
+            <span>Exit</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <header>
+        <div class="header-wrapper">
+          <div class="header-title">
+            <span>Project</span>
+            <span>Dicoding</span>
+          </div>
+          <div class="user-info">
+            <div class="search">
+              <i class="bx bx-search-alt"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+            <img src="image/government64px.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <article>
+          <h2>Cara Membuat Halaman Login dengan HTML, CSS, dan JavaScript</h2>
+          <p>
+            Pada tutorial ini, kita akan membahas langkah-langkah untuk membuat
+            halaman login yang responsif menggunakan HTML, CSS, dan JavaScript.
+            Halaman login ini akan mencakup validasi input, styling modern, dan
+            responsif untuk berbagai perangkat.
+          </p>
+
+          <h3>Langkah 1: Struktur HTML</h3>
+          <p>
+            Pertama, kita mulai dengan membuat struktur dasar HTML. Kita akan
+            membutuhkan form dengan input untuk username dan password, serta
+            tombol submit.
+          </p>
+          <div class="code-box">
+            <button class="copy-btn" data-target="#code1">Copy</button>
+            <pre><code id="code1">&lt;form&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username" required&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="password"&gt;Password:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password" required&gt;
+    &lt;/div&gt;
+    &lt;button type="submit"&gt;Login&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+          </div>
+
+          <h3>Langkah 2: Styling dengan CSS</h3>
+          <p>
+            Selanjutnya, kita tambahkan CSS untuk memberikan gaya pada form
+            login kita. Pastikan untuk membuat form yang responsif agar dapat
+            terlihat baik di berbagai perangkat.
+          </p>
+          <div class="code-box">
+            <button class="copy-btn" data-target="#code2">Copy</button>
+            <pre><code id="code2">form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+</code></pre>
+          </div>
+
+          <h3>Langkah 3: Validasi dengan JavaScript</h3>
+          <p>
+            Terakhir, kita tambahkan validasi sederhana dengan JavaScript untuk
+            memastikan bahwa pengguna memasukkan username dan password yang
+            valid.
+          </p>
+          <div class="code-box">
+            <button class="copy-btn" data-target="#code3">Copy</button>
+            <pre><code id="code3">document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (username === '' || password === '') {
+        alert('Username dan password harus diisi');
+    } else {
+        alert('Login berhasil');
+    }
+});
+</code></pre>
+          </div>
+        </article>
+        <aside>
+          <h2>Information</h2>
+          <img src="image/IMG_20240209_055739.jpg" alt="Deskripsi gambar 1" />
+          <div class="profile-info">
+            <p><strong>Nama:</strong> Mizaell Phinehas A. M. (Ell)</p>
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/Ellxcv" target="_blank">Ellxcv</a>
+            </p>
+            <p>
+              <strong>Ringkasan Profesional:</strong> Saya seorang mahasiswa
+              Teknik Informatika di ITN yang sedang merintis karir sebagai web
+              developer. Saya memiliki kemampuan dalam berbagai teknologi web
+              dan memiliki ketertarikan khusus pada problem solving.
+            </p>
+            <p><strong>Keahlian:</strong></p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+            </ul>
+            <p><strong>Keahlian Non-Teknis:</strong> Problem Solving</p>
+            <p><strong>Pendidikan:</strong></p>
+            <ul>
+              <li>Lulusan SMA: SMAN 3 BEKASI, 2020</li>
+              <li>
+                Mahasiswa Teknik Informatika: ITN (Institut Teknologi Nasional)
+              </li>
+            </ul>
+            <p><strong>Bahasa:</strong></p>
+            <ul>
+              <li>Bahasa Indonesia: Intermediate</li>
+              <li>English: Basic</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <h3>Project Footer</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ratione
+            voluptatem sequi nesciunt.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Ell. Design by .</p>
+        </div>
+      </footer>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
